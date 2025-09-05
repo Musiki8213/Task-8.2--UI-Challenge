@@ -1,0 +1,40 @@
+.second-section h2 {
+  margin-bottom: -400px;
+  margin-top: 150px;
+  width: 450px;
+  margin-left: 700px;
+  color: hsl(208, 49%, 24%);
+  font-weight: 500;
+  font-size: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.second-section-content {
+  display: flex;
+  flex-direction: row;
+  margin-right: -210px;
+  margin-top: 300px;
+}
+
+.second-section-texts {
+  font-weight: 350;
+  font-size: 25px;
+  line-height: 30px;
+  color: hsla(208, 35%, 39%, 1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 250px;
+  width: 900px;
+  margin-top: 200px;
+}
+
+.second-section-texts h3 {
+  font-weight: 500;
+  color: hsl(208, 49%, 24%);
+}
+
+.second-section img {
+  margin-left: 0px;
+  width: 110%;
+  margin-top: -30px;
+}
+

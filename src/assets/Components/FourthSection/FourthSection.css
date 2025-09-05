@@ -1,0 +1,25 @@
+.fourth-section {
+  margin-top: 250px;
+  display: flex;
+  flex-direction: row;
+  gap: 250px;
+}
+
+.fourth-section img {
+  width: 160%;
+  margin-left: -300px;
+  margin-top: -150px;
+}
+
+.fourth-section .text {
+  font-weight: 350;
+  font-size: 25px;
+  line-height: 30px;
+  color: hsla(208, 35%, 39%, 1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.fourth-section .text h3 {
+  font-weight: 500;
+  color: hsl(208, 49%, 24%);
+}

@@ -1,0 +1,46 @@
+.third-section {
+  margin-top: 70px;
+  background: linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+  height: 500px;
+  border-top-right-radius: 150px;
+  border-bottom-left-radius: 100px;
+  font-family: "Overpass", sans-serif;
+}
+
+.third-section .circle-img {
+  width: 60%;
+  height: 50%;
+  margin-left: -130px;
+  margin-top: -500px;
+}
+
+.third-section .phone-img {
+  width: 38%;
+  height: 35%;
+  margin-left: 150px;
+  margin-top: -900px;
+}
+
+.third-section .text {
+  margin-top: -600px;
+  color: hsla(240, 11%, 89%, 1.00);
+  margin-left: 980px;
+  line-height: 1.5;
+}
+
+.third-section .text h3 {
+  font-size: 34px;
+  color: white;
+}
+
+
+.third-section .text button {
+  margin-top: 20px;
+  background-color: hsl(355, 100%, 74%);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
