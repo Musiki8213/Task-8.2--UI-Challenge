@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>[Blogr]</title>
+
+    <!-----------------CSS------------>
+    <style>
+      #sideBar {
+  height: 100%;
+  position: fixed;
+  z-index: 1000;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+  color: white;
+}
+
+#openBtn {
+  font-size: 20px;
+  padding: 10px 20px;
+}
+
+#closeBtn {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+}
+
+#btn button {
+  margin: 20px;
+  padding: 10px;
+  font-size: 16px;
+}
+#side2{
+
+  background-color: hsl(240, 2%, 79%);
+  text-align: center;
+}
+#side1{
+  text-align: center;
+}
+#side3{
+  text-align: center;
+}
+#btn{
+  text-align: center;
+}
+#blorgImg{
+  width: 30%;
+  padding: 10px ;
+}
+#topPart-flex{
+  display: flex;
+  gap: 400px;
+}
+ul li{
+  list-style: none;
+  display: inline;
+  padding: 20px;
+}
+body{
+
+  background-color: hsl(0, 0%, 100%)
+}
+#main-top{
+  
+  width: 2000px;
+  height: 300px;
+  background-color: hsl(13, 100%, 72%);
+  background-image: url('images/bg-pattern-intro-desktop.svg'); 
+  background-size: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 50px;
+ 
+}
+#modernH2{
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  font-size:large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+#grow{
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  font-size: 13px;
+}
+#flex-button{
+  display: flex;
+  padding-left: 850px;
+  gap: 10px;
+}
+#freeBtn{
+  border-radius: 14px;
+  padding: 6px;
+  background-color: white;
+  border: 1px ;
+}
+#moreBtn{
+  border-radius: 14px;
+  padding: 6px;
+  border: 1px ;
+}
+#designed{
+  text-align: center;
+  color: hsl(208, 49%, 24%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#bigImageDiv1{
+float: right;
+}
+#bigImage1{
+  width: 50%;
+}
+#third-part{
+  display: flex;
+}
+#introduction{
+
+  color: hsl(208, 49%, 24%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#robust{
+
+  color: hsl(208, 49%, 24%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+footer{
+  background-color: hsl(240, 10%, 16%);
+  color: hsl(240, 2%, 79%);
+}
+    </style>
+    <!-----------------CSS------------>
+  </head>
+  <body>
+    
+   
+      <div id="sideBar">
+    <div id="close">
+    <a href="javascript:void(0)" id="closeBtn" onclick="closeSlider()"><img id="closeIcon" src="images/icon-close.svg" alt="close"> </a>
+    </div>
+    <div id="sideImg">
+     <img id="blorgImg" src="images/logo.svg" alt="blorg"> 
+    </div>
+ 
+
+    
+    <div id="side1">
+      <p>Product</p>
+      <p>Company</p>
+      <p>Connect</p>
+  
+    </div>
+
+    <div id="side2">
+      <p>Contact</p>
+      <p>Newsletter</p>
+      <p>LinkedIn</p>
+    </div>
+
+    <div id="side3">
+      <p>Login</p>
+    </div>
+    <div id="btn">
+      <button>Sign Up</button>
+    </div>
+
+  </div>
+
+ <!---------------------SIDE BAR---------------------->
+  
+
+
+<!---------------TOP PART----------------------->
+<div id="main-top">
+<div id="topPart-flex">
+  <div id="openBtn">
+    <button id="btn2" onclick="openSlider()"><img id="openIcon" src="images/logo.svg" alt="close"> </button>
+  </div>
+  <ul>
+<li>Product</li>
+<img id="productImg" src="images/icon-arrow-light.svg" alt="arrow">
+<li>Company</li>
+<img id="companyImg" src="images/icon-arrow-light.svg" alt="arrow">
+<li>Connect</li>
+<img id="connectImg" src="images/icon-arrow-light.svg" alt="arrow">
+</ul>
+<p>Login</p>
+<button id="btnTop">Sign Up</button>
+</div>
+
+<div id="modernH2">
+<h2>A morden publishing platform</h2>
+ </div>
+
+ <div id="grow">
+  <p>Grow your audience and build your online brand</p>
+ </div>
+
+ <div id="flex-button">
+<div id="free">
+ <button id="freeBtn">Start for Free</button>
+ </div>
+ <div id="more">
+ <button id="moreBtn">Learn More</button>
+ </div>
+ </div>
+
+
+ </div>
+<!---------------TOP PART----------------------->
+
+
+
+<!---------------SECOND PART----------------------->
+
+<div id="designed">
+  <h2>Designed for the future</h2>
+</div>
+
+<div id="introduction">
+  <h3>Introducing an extensible editor</h3>
+<p>
+    Blogr features an exceedingly intuitive interface which lets you focus<br> on
+    one thing: creating content. The editor supports management of<br> multiple
+    blogs and allows easy manipulation of embeds such as images,<br> videos, and
+    Markdown. Extensibility with plugins and themes provide<br> easy ways to add
+    functionality or change the looks of a blog.</p>
+</div>
+
+<div id="robust">
+  <h3>Robust content management</h3>
+  <p>
+    Flexible content management enables users to easily move through<br> posts.
+    Increase the usability of your blog by adding customized<br> categories,
+    sections, format, or flow. With this functionality, you’re in <br>full control.</p>
+</div>
+
+<div id="bigImageDiv1">
+  <img id="bigImage1" src="images/illustration-editor-desktop.svg" alt="circle">
+</div>
+<!---------------SECOND PART----------------------->
+
+
+
+<!---------------THIRD PART----------------------->
+
+
+<div id="third-part">
+
+  <div id="img2Div">
+  <img id="img2" src="images/illustration-phones.svg" alt="phones">
+   </div>
+
+   <div id="stateDiv">
+    <h3>State of the Art Infrastructure</h3>
+    <p>With reliability and speed in mind,
+    worldwide data centers provide the <br>backbone for ultra-fast connectivity.
+    This ensures your site will load<br> instantly, no matter where your readers
+    are, keeping your site<br> competitive.</p>
+   </div>
+</div>
+
+
+<!---------------THIRD PART----------------------->
+
+
+
+
+
+
+<!---------------FOURTH PART----------------------->
+<div id="fouth-part">
+<div id="img3Div">
+  
+  <img id="img3" src="images/illustration-laptop-desktop.svg" alt="laptop">
+</div>
+
+<div id="fourth-part1">
+  <h3>Free, open, simple</h3>
+  <p>Blogr is a free and
+    open source application backed by a large<br> community of helpful developers.
+    It supports features such as code<br> syntax highlighting, RSS feeds, social
+    media integration, third-party<br> commenting tools, and works seamlessly with
+    Google Analytics. The<br> architecture is clean and is relatively easy to learn.</p>
+</div>
+
+<div id="fourth-part2">
+  <h3>Powerful tooling</h3>
+  <p>Batteries included. We built a simple and straightforward
+    CLI tool that<br> makes customization and deployment a breeze, but capable of<br>
+    producing even the most complicated sites.</p>
+</div>
+
+
+</div>
+
+
+<!---------------FOURTH PART----------------------->
+
+    <div class="attribution">
+      Bootcamp 2023 by
+      <a href="https://www.mlab.co.za" target="_blank"
+        >CodeTribe</a
+      >. Developed by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
+
+<footer>
+  <p class="attribution">
+    Bootcamp 2023 by
+    <a href="https://www.mlab.co.za" target="_blank">CodeTribe</a>.
+    Developed by <a href="#">Musiki</a>.
+ </p>
+    <div id="footerImgDiv">
+    <img id="imgFooter" src="images/logo.svg" alt="footer">
+    </div>
+ 
+    <div id="footerTexts">
+      <p>Product</p>
+      <p>Company</p>
+      <p>Connect</p>
+    </div>
+
+    <div id="footerList1">
+      <ul>
+        <li>Overview</li>
+        <li>Pricing</li>
+        <li>Marketplace</li>
+        <li>Features</li>
+        <li>Integrations</li>
+      </ul>
+    </div>
+    
+    <div id="footerList2">
+      <ul>
+        <li>About</li>
+        <li>Team</li>
+        <li>Blog</li>
+        <li>Careers</li>
+      </ul>
+    </div>
+ 
+    <div id="footerList3">
+      <ul>
+        <li>Contact</li>
+        <li>Newsletter</li>
+        <li>LinkedIn</li>
+      </ul>
+    </div>
+
+</footer>
+
+<!--------------------javascript---------------->
+  <script>
+    function openSlider() {
+  document.getElementById("sideBar").style.width = "250px";
+}
+
+function closeSlider(){
+    document.getElementById("sideBar").style.width= "0";
+}
+  </script>
+  <!--------------------javascript---------------->
+
+  
+</body>
+</html>
+
+<!-- Source Frontend Mentor: https://www.frontendmentor.io -->
