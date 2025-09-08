@@ -1,27 +1,42 @@
-
-import "./Navbar.css";
+import { useState } from 'react';
+import './Navbar.css';
+import Sidebar from '../Sidebar/Sidebar';
+import logo from '/logo.svg';
+import arrowLight from '/icon-arrow-light.svg';
 
 export const Navbar = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
   return (
     <div className="navbar-wrapper">
       <nav className="navbar">
         <div className="navbar-content">
-          <div>
-            <img src="/public/logo.svg" alt="React Logo" className="navbar-logo" />
+          <div className="navbar-logo-container">
+            {/* The logo is now a clickable image */}
+            <img 
+              src={logo} 
+              alt="Blogr Logo" 
+              className="navbar-logo" 
+              onClick={toggleSidebar} 
+            />
           </div>
 
           <div className="nav-items">
             <div className="nav-item">
               Product
-              <img src="public/icon-arrow-light.svg" alt="arrow" />
+              <img src={arrowLight} alt="arrow" />
             </div>
             <div className="nav-item">
               Company
-              <img src="public/icon-arrow-light.svg" alt="arrow" />
+              <img src={arrowLight} alt="arrow" />
             </div>
             <div className="nav-item">
               Connect
-              <img src="public/icon-arrow-light.svg" alt="arrow" />
+              <img src={arrowLight} alt="arrow" />
             </div>
           </div>
 
@@ -31,6 +46,7 @@ export const Navbar = () => {
               <button className="btn-signup">Sign Up</button>
             </div>
           </div>
+
         </div>
 
         <div className="hero-section">
@@ -44,6 +60,9 @@ export const Navbar = () => {
           </div>
         </div>
       </nav>
+
+      {/* Conditionally render the Sidebar component */}
+      <Sidebar isOpen={isSidebarOpen} onClose={toggleSidebar} />
     </div>
   );
 };

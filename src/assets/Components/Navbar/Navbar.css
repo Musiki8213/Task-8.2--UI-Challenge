@@ -28,6 +28,7 @@
 .navbar-logo {
   height: 40px;
   padding-left: 100px;
+  cursor: pointer;
 }
 
 .nav-items {

@@ -4,6 +4,7 @@ import {SecondSection} from "./assets/Components/SecondSection/SecondSection";
 import { ThirdSection } from './assets/Components/ThirdSection/ThirdSection';       
 import {FourthSection} from "./assets/Components/FourthSection/FourthSection";  
 import {Footer} from "./assets/Components/Footer/Footer";
+import Sidebar from './assets/Components/Sidebar/Sidebar';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <ThirdSection/>
       <FourthSection/>
       <Footer/> 
+      <Sidebar isOpen={false} onClose={() => {}} />
     </div>
   )
 }
