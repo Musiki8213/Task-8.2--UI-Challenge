@@ -3,6 +3,7 @@ import './Navbar.css';
 import Sidebar from '../Sidebar/Sidebar';
 import logo from '/logo.svg';
 import arrowLight from '/icon-arrow-light.svg';
+import hamburgerIcon from '/icon-hamburger.svg';
 
 export const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -16,41 +17,40 @@ export const Navbar = () => {
       <nav className="navbar">
         <div className="navbar-content">
           <div className="navbar-logo-container">
-            {/* The logo is now a clickable image */}
             <img 
               src={logo} 
               alt="Blogr Logo" 
               className="navbar-logo" 
-              onClick={toggleSidebar} 
             />
           </div>
 
           <div className="nav-items">
             <div className="nav-item">
               Product
-              <img src={arrowLight} alt="arrow" />
+              <img src={arrowLight} alt="arrow" className="nav-arrow" />
             </div>
             <div className="nav-item">
               Company
-              <img src={arrowLight} alt="arrow" />
+              <img src={arrowLight} alt="arrow" className="nav-arrow" />
             </div>
             <div className="nav-item">
               Connect
-              <img src={arrowLight} alt="arrow" />
+              <img src={arrowLight} alt="arrow" className="nav-arrow" />
             </div>
           </div>
 
           <div className="nav-auth">
             <p className="nav-login">Login</p>
-            <div>
-              <button className="btn-signup">Sign Up</button>
-            </div>
+            <button className="btn-signup">Sign Up</button>
           </div>
 
+          <button className="hamburger-menu" onClick={toggleSidebar}>
+            <img src={hamburgerIcon} alt="Menu" />
+          </button>
         </div>
 
         <div className="hero-section">
-          <p className="hero-title">A modern publishing platform</p>
+          <h1 className="hero-title">A modern publishing platform</h1>
           <p className="hero-subtitle">
             Grow your audience and build your online brand
           </p>
@@ -61,7 +61,6 @@ export const Navbar = () => {
         </div>
       </nav>
 
-      {/* Conditionally render the Sidebar component */}
       <Sidebar isOpen={isSidebarOpen} onClose={toggleSidebar} />
     </div>
   );
