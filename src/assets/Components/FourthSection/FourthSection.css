@@ -1,25 +1,146 @@
 .fourth-section {
-  margin-top: 250px;
+  padding: 150px 100px;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: "Overpass", sans-serif;
+}
+
+.fourth-section-content {
   display: flex;
   flex-direction: row;
-  gap: 250px;
+  align-items: center;
+  gap: 100px;
 }
 
-.fourth-section img {
-  width: 160%;
-  margin-left: -300px;
-  margin-top: -150px;
+.fourth-section-image {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
 }
 
-.fourth-section .text {
-  font-weight: 350;
-  font-size: 25px;
-  line-height: 30px;
-  color: hsla(208, 35%, 39%, 1);
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+.desktop-image {
+  width: 100%;
+  height: auto;
+  max-width: 900px;
+  margin-left: -200px;
+  display: block;
 }
 
-.fourth-section .text h3 {
-  font-weight: 500;
+.mobile-image {
+  display: none;
+}
+
+.fourth-section-text {
+  flex: 1;
+  max-width: 550px;
+  padding-right: 50px;
+}
+
+.text-block {
+  margin-bottom: 60px;
+}
+
+.text-block:last-child {
+  margin-bottom: 0;
+}
+
+.text-block h3 {
+  font-weight: 600;
   color: hsl(208, 49%, 24%);
+  font-size: 28px;
+  margin-bottom: 25px;
+  font-family: "Overpass", sans-serif;
+}
+
+.text-block p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.8;
+  color: hsl(207, 13%, 34%);
+  font-family: "Overpass", sans-serif;
+}
+
+@media (max-width: 1024px) {
+  .fourth-section {
+    padding: 100px 50px;
+  }
+
+  .fourth-section-content {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .fourth-section-text {
+    padding-right: 0;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .desktop-image {
+    margin-left: 0;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .fourth-section {
+    padding: 80px 30px 60px;
+  }
+
+  .fourth-section-content {
+    gap: 50px;
+  }
+
+  .fourth-section-text {
+    padding-right: 0;
+  }
+
+  .text-block {
+    margin-bottom: 50px;
+  }
+
+  .text-block h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .text-block p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .desktop-image {
+    display: none;
+  }
+
+  .mobile-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 375px) {
+  .fourth-section {
+    padding: 60px 20px 50px;
+  }
+
+  .fourth-section-content {
+    gap: 40px;
+  }
+
+  .text-block {
+    margin-bottom: 40px;
+  }
+
+  .text-block h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .text-block p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
 }
