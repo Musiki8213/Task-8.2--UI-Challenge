@@ -1,0 +1,210 @@
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, hsl(13, 100%, 72%) 0%, hsl(353, 100%, 62%) 100%);
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 50px;
+  overflow-y: auto;
+}
+
+.sidebar {
+  background-color: #fff;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 330px;
+  padding: 0;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 25px 25px;
+  position: relative;
+}
+
+.sidebar-logo {
+  height: 32px;
+}
+
+.close-icon {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.close-icon:hover {
+  opacity: 0.7;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  padding: 0 25px;
+  gap: 0;
+}
+
+.nav-item {
+  text-align: center;
+}
+
+.nav-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: hsl(208, 49%, 24%);
+  cursor: pointer;
+  padding: 20px 0;
+  gap: 8px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.arrow-icon {
+  width: 10px;
+  height: 6px;
+  transition: transform 0.3s ease;
+}
+
+.arrow-icon.rotated {
+  transform: rotate(180deg);
+}
+
+.sub-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+  background-color: hsl(240, 2%, 79%, 0.1);
+  border-radius: 5px;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.sub-menu li {
+  font-size: 16px;
+  color: hsl(207, 13%, 34%);
+  padding: 10px 0;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  font-weight: 400;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.sub-menu li:hover {
+  color: hsl(356, 100%, 66%);
+}
+
+.sidebar-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 25px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.login-button {
+  background: none;
+  border: none;
+  color: hsl(208, 49%, 24%);
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  transition: color 0.2s ease;
+}
+
+.login-button:hover {
+  color: hsl(356, 100%, 66%);
+}
+
+.signup-button {
+  background: linear-gradient(135deg, hsl(13, 100%, 72%) 0%, hsl(353, 100%, 62%) 100%);
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 14px 50px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 280px;
+  transition: opacity 0.3s ease;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.signup-button:hover {
+  opacity: 0.9;
+}
+
+@media (min-width: 769px) {
+  .sidebar-overlay {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .sidebar {
+    width: 95%;
+    max-width: 100%;
+    margin-top: 10px;
+  }
+
+  .sidebar-header {
+    padding: 25px 20px 20px;
+  }
+
+  .sidebar-logo {
+    height: 28px;
+  }
+
+  .close-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .sidebar-nav {
+    padding: 0 20px;
+  }
+
+  .nav-toggle {
+    font-size: 16px;
+    padding: 18px 0;
+  }
+
+  .sub-menu {
+    padding: 18px 0;
+  }
+
+  .sub-menu li {
+    font-size: 15px;
+    padding: 8px 0;
+  }
+
+  .sidebar-footer {
+    padding: 25px 20px;
+    gap: 18px;
+  }
+
+  .login-button {
+    font-size: 16px;
+  }
+
+  .signup-button {
+    font-size: 15px;
+    padding: 12px 40px;
+  }
+}

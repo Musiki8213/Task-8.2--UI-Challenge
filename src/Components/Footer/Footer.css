@@ -1,0 +1,159 @@
+.footer {
+  background-color: hsl(240, 10%, 16%);
+  margin-top: 200px;
+  border-top-right-radius: 100px;
+  padding: 70px 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.footer-content {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 100px;
+}
+
+.footer-logo-container {
+  flex-shrink: 0;
+}
+
+.footer-logo {
+  height: 40px;
+  width: auto;
+  filter: brightness(0) invert(1);
+}
+
+.footer-links {
+  display: flex;
+  gap: 120px;
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.footer-section {
+  color: white;
+}
+
+.footer-section h4 {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 30px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-section li {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: hsl(240, 2%, 79%);
+  transition: color 0.3s ease;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.footer-section a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    padding: 60px 0;
+    margin-top: 150px;
+  }
+
+  .footer-content {
+    padding: 0 50px;
+    gap: 60px;
+  }
+
+  .footer-links {
+    gap: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 60px 0;
+    margin-top: 100px;
+    border-top-right-radius: 80px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    padding: 0 30px;
+    gap: 50px;
+    text-align: center;
+  }
+
+  .footer-logo-container {
+    margin: 0 auto;
+  }
+
+  .footer-logo {
+    height: 32px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+  }
+
+  .footer-section {
+    width: 100%;
+  }
+
+  .footer-section h4 {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .footer {
+    padding: 50px 0;
+    margin-top: 80px;
+    border-top-right-radius: 60px;
+  }
+
+  .footer-content {
+    padding: 0 20px;
+    gap: 40px;
+  }
+
+  .footer-logo {
+    height: 28px;
+  }
+
+  .footer-links {
+    gap: 35px;
+  }
+
+  .footer-section h4 {
+    font-size: 15px;
+    margin-bottom: 18px;
+  }
+
+  .footer-section li {
+    font-size: 14px;
+  }
+
+  .footer-section ul {
+    gap: 10px;
+  }
+}
